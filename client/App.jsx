@@ -4,6 +4,9 @@ import translations from "@shopify/polaris/locales/en.json";
 import { useRoutes } from "raviger";
 import routes from "./Routes";
 import AppBridgeProvider from "./providers/AppBridgeProvider";
+import LogRocket from 'logrocket'; // Monitoring LogRocket
+
+LogRocket.init('ixndet/online-shop-tugas-satrya'); // Monitoring LogRocket
 
 export default function App() {
   const RouteComponents = useRoutes(routes);
