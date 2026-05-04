@@ -9,28 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kinngh/shopify-node-express-mongodb-app.git"
+    "url": "https://github.com/ayrtas83/shop-online-tugas.git"
   },
   "scripts": {
     "dev": "NODE_ENV=dev nodemon server/index.js --ignore client/ --ignore dist/ ",
-    "build": "vite build --config=./client/vite.config.js",
+    "build": "vite build",
     "start": "NODE_ENV=prod node server/index.js",
-    "-----> utils <-----": "",
-    "update": "ncu -u",
     "pretty": "prettier --write .",
-    "-----> Tunnel <-----": "",
-    "ngrok:auth": "ngrok authtoken <your-auth-token>",
-    "ngrok": "ngrok http 8081",
-    "cloudflare": "cloudflared tunnel --url localhost:8081",
-    "-----> Shopify <-----": "",
-    "g:install": "npm i -g @shopify/cli@latest",
-    "shopify": "shopify",
-    "update:config": "node _developer/tomlWriter.js; npm run pretty; shopify app deploy;",
-    "update:url": "node _developer/updateDashboard.js",
-    "-----> Reserved Scripts <-----": "",
     "preserve": "npm run build"
   },
-"dependencies": {
+  "dependencies": {
     "@shopify/polaris": "^13.9.5",
     "@shopify/shopify-api": "^13.0.0",
     "compression": "^1.8.1",
@@ -51,12 +39,10 @@
     "@iarna/toml": "^2.2.5",
     "@shopify/cli-kit": "^3.93.0",
     "@shopify/polaris-types": "^1.0.1",
-    "@vitejs/plugin-react": "^6.0.1",
     "concurrently": "^9.2.1",
     "ngrok": "^5.0.0-beta.2",
     "nodemon": "^3.1.14",
     "npm-check-updates": "^20.0.0",
-    "prettier": "^3.8.1",
-    "vite": "^8.0.3"
+    "prettier": "^3.8.1"
   }
 }
